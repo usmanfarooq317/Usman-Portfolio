@@ -55,7 +55,7 @@ const SimpleHome = () => {
               <div className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground">
                 <span>I'm a </span>
                 <span className="text-primary font-semibold">
-                  Backend Developer
+                  Backend Developer at <a href="https://www.linkedin.com/company/ash-tech-virtual-software-house/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-white-600 hover:underline">ASH Tech's</a>
                 </span>
               </div>
             </div>
@@ -63,8 +63,8 @@ const SimpleHome = () => {
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
               Passionate about creating innovative web solutions and solving
               complex problems through modern technologies. Specialized in
-              NestJS, Next.js, and backend development with some experience in
-              frontend technologies.
+              NestJS, PostgreSQL, and backend development with some experience in
+              frontend technologies like Nextjs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">

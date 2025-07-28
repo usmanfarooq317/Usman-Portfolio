@@ -91,7 +91,7 @@ const Home = () => {
                 <motion.div className="text-2xl lg:text-3xl text-muted-foreground">
                   I'm a{" "}
                   <span className="text-primary font-semibold">
-                    Full Stack Developer
+                    Backend Developer at <a href="https://www.linkedin.com/company/ash-tech-virtual-software-house/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-white-600 hover:underline">ASH Tech's</a>
                   </span>
                 </motion.div>
               </div>

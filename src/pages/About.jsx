@@ -48,7 +48,7 @@ const About = () => {
               About Me
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              I'm a dedicated and ambitious Full Stack Developer with a strong passion for 
+              I'm a dedicated and ambitious backend Developer with a strong passion for 
               development and continuous learning.
             </p>
           </motion.div>
@@ -84,9 +84,10 @@ const About = () => {
                 for creating innovative web solutions.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                CurrentHaving completed my BS in Computer Science at National University of Modern Languages, I've gained practical experience through my internship at AG Infotech, where I worked on backend development using modern technologies like NestJS, PostgreSQL, and Prisma ORM.
-                PostgreSQL, and Prisma ORM.
-              </p>
+  Having completed my BS in Computer Science at National University of Modern Languages, I've gained practical experience through my internship at AG Infotech, where I worked on backend development using modern technologies like NestJS, PostgreSQL, and Prisma ORM. Currently, I'm working as a Backend Developer at <a href="https://www.linkedin.com/company/ash-tech-virtual-software-house/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ASH Tech's</a> company, a Virtual Software House.
+</p>
+
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">
                   <FiDownload className="mr-2" />

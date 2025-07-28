@@ -4,6 +4,19 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
 const Experience = () => {
   const experiences = [
     {
+      title: 'Backend Developer',
+      company: 'ASH Tech\'s',
+      companyLink: 'https://www.linkedin.com/company/ash-tech-virtual-software-house/posts/?feedView=all',
+      duration: 'July 2025 - Present',
+      location: 'Remote (Virtual Software House)',
+      description: [
+        'Currently working as a Backend Developer focusing on scalable backend services.',
+        'Utilizing NestJS, TypeScript, and PostgreSQL for building robust APIs.',
+        'Collaborating in a remote team environment for software planning and implementation.',
+        'Following software development best practices including Git version control and code reviews.',
+      ],
+    },
+    {
       title: 'Backend Developer Intern',
       company: 'AG Infotech',
       duration: 'June 2024 - August 2024',
@@ -16,7 +29,6 @@ const Experience = () => {
         'Participated in agile development methodologies, including daily stand-ups and sprint planning.',
       ],
     },
-    
   ];
 
   return (
@@ -57,7 +69,7 @@ const Experience = () => {
                 {index !== experiences.length - 1 && (
                   <div className="absolute left-6 top-12 w-0.5 h-full bg-border"></div>
                 )}
-                
+
                 {/* Timeline dot */}
                 <div className="flex-shrink-0 w-12 h-12 rounded-full border-4 border-border bg-primary flex items-center justify-center z-10">
                   <FiBriefcase className="text-primary-foreground" size={24} />
@@ -69,7 +81,18 @@ const Experience = () => {
                     <h3 className="text-2xl font-semibold text-foreground mb-2">
                       {exp.title}
                     </h3>
-                    <p className="text-primary font-medium mb-2">{exp.company}</p>
+                    {exp.companyLink ? (
+                      <a
+                        href={exp.companyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary font-medium mb-2 inline-block hover:underline"
+                      >
+                        {exp.company}
+                      </a>
+                    ) : (
+                      <p className="text-primary font-medium mb-2">{exp.company}</p>
+                    )}
                     <div className="flex items-center text-muted-foreground text-sm mb-4">
                       <FiCalendar className="mr-2" /> {exp.duration}
                       <FiMapPin className="ml-4 mr-2" /> {exp.location}
@@ -91,4 +114,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
