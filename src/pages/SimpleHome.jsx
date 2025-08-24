@@ -205,9 +205,7 @@ const SimpleHome = () => {
                     >
                       Code
                     </Link>
-                    <button className="inline-flex items-center px-3 py-2 text-foreground text-sm rounded-md hover:bg-accent transition-colors min-h-[36px] flex-1 justify-center">
-                      Demo
-                    </button>
+                    
                   </div>
                 </div>
               </div>

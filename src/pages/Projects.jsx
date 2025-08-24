@@ -15,7 +15,7 @@ const Projects = () => {
       tech: ['Next.js', 'NestJS', 'PostgreSQL', 'Prisma', 'TypeScript', 'Tailwind CSS'],
       category: 'fullstack',
       github: 'https://github.com/usmanfarooq317/E-commerce-App.git',
-      demo: '#',
+      
       image: '/ecommerceapp.png',
       featured: true
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       tech: ['Python', 'Django', 'SQLite', 'Machine Learning', 'Scikit-learn', 'Pandas'],
       category: 'ai',
       github: '#',
-      demo: '#',
+      
       image: '/kidneystone.jpg',
       featured: true
     },
@@ -39,7 +39,7 @@ const Projects = () => {
       tech: ['Node.js', 'Express', 'JavaScript', 'EJS', 'CSS', 'MongoDB'],
       category: 'backend',
       github: 'https://github.com/usmanfarooq317/User-Login.git',
-      demo: '#',
+      
       image: '/userauthentication.jpg',
       featured: false
     },
@@ -51,7 +51,7 @@ const Projects = () => {
       tech: ['NestJS', 'TypeScript', 'Prisma', 'PostgreSQL', 'Swagger', 'JWT'],
       category: 'backend',
       github: 'https://github.com/usmanfarooq317/Ecommerce-APIs.git',
-      demo: '#',
+      
       image: '/ecommerceapis.jpg',
       featured: false
     },
@@ -63,7 +63,7 @@ const Projects = () => {
       tech: ['NestJS', 'Prisma', 'PostgreSQL', 'TypeScript', 'WebSocket', 'Redis'],
       category: 'backend',
       github: '#',
-      demo: '#',
+      
       image: '/designertrellis.png',
       featured: false
     },
@@ -75,7 +75,7 @@ const Projects = () => {
       tech: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'JavaScript', 'MySQL'],
       category: 'frontend',
       github: '#',
-      demo: '#',
+      
       image: '/fastfood.png',
       featured: false
     }
@@ -125,9 +125,7 @@ const Projects = () => {
 >
   <FiGithub className="mr-2" size={16} /> Code
 </Link>
-                    <button className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
-                      <FiExternalLink className="mr-2" size={16} /> Demo
-                    </button>
+                    
                   </div>
                 </div>
               </motion.div>
@@ -170,9 +168,7 @@ const Projects = () => {
 >
   <FiGithub className="mr-2" size={14} /> Code
 </Link>
-                    <button className="inline-flex items-center px-3 py-2 text-foreground text-sm rounded-md hover:bg-accent transition-colors">
-                      <FiExternalLink className="mr-2" size={14} /> Demo
-                    </button>
+                    
                   </div>
                 </div>
               </motion.div>

@@ -235,9 +235,7 @@ const Home = () => {
                         <FiGithub className="mr-2" size={16} /> Code
                       </Link>
                     </Button>
-                    <Button size="sm" variant="ghost">
-                      <FiExternalLink className="mr-2" size={16} /> Demo
-                    </Button>
+                   
                   </div>
                 </div>
               </motion.div>
