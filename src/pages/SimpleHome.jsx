@@ -1,32 +1,9 @@
 import { Link } from "react-router-dom";
+import { projects } from "../pages/Projects"; // Import the shared projects data
 
 const SimpleHome = () => {
-  const featuredProjects = [
-    {
-      title: "E-commerce Full-Stack App",
-      description:
-        "Complete e-commerce solution with user authentication, admin panel, and order management.",
-      tech: ["Next.js", "NestJS", "PostgreSQL", "Prisma"],
-      github: "https://github.com/usmanfarooq317/E-commerce-App.git",
-      image: "/ecommerceapp.png",
-    },
-    {
-      title: "Ecommerce APIs",
-      description:
-        "RESTful APIs with comprehensive CRUD operations and Swagger documentation.",
-      tech: ["NestJS", "TypeScript", "Prisma"],
-      github: "https://github.com/usmanfarooq317/Ecommerce-APIs.git",
-      image: "/ecommerceapis.jpg",
-    },
-    {
-      title: "Kidney Stone Prediction",
-      description:
-        "AI-powered prediction system with appointment management functionality.",
-      tech: ["Python", "Django", "SQLite", "AI/ML"],
-      github: "https://github.com/ahsanm7911/kidney-stone-prediction",
-      image: "/kidneystone.jpg",
-    },
-  ];
+  // Filter only featured projects
+  const featuredProjects = projects.filter((project) => project.featured);
 
   const technologies = [
     { name: "JavaScript", icon: "/javascript.png" },
@@ -55,7 +32,7 @@ const SimpleHome = () => {
               <div className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground">
                 <span>I'm a </span>
                 <span className="text-primary font-semibold">
-                  Backend Developer at <a href="https://www.linkedin.com/company/ash-tech-virtual-software-house/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-white-600 hover:underline">ASH Tech's</a>
+                  Backend Developer
                 </span>
               </div>
             </div>
@@ -64,7 +41,7 @@ const SimpleHome = () => {
               Passionate about creating innovative web solutions and solving
               complex problems through modern technologies. Specialized in
               NestJS, PostgreSQL, and backend development with some experience in
-              frontend technologies like Nextjs.
+              frontend technologies like Next.js.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -79,7 +56,6 @@ const SimpleHome = () => {
                 target="_blank"
                 download
                 className="inline-flex items-center justify-center px-6 py-3 border border-border bg-background text-foreground rounded-md font-medium hover:bg-accent transition-colors min-h-[44px] text-center"
-              
               >
                 Download Resume
               </Link>
@@ -171,7 +147,7 @@ const SimpleHome = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {featuredProjects.map((project) => (
               <div
-                key={project.title}
+                key={project.id}
                 className="bg-background rounded-lg border border-border overflow-hidden hover:border-primary/50 transition-all"
               >
                 <img
@@ -187,7 +163,7 @@ const SimpleHome = () => {
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech) => (
+                    {project.tech.slice(0, 3).map((tech) => (
                       <span
                         key={tech}
                         className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-md"
@@ -195,6 +171,11 @@ const SimpleHome = () => {
                         {tech}
                       </span>
                     ))}
+                    {project.tech.length > 3 && (
+                      <span className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded-md">
+                        +{project.tech.length - 3} more
+                      </span>
+                    )}
                   </div>
                   <div className="flex gap-2">
                     <Link
@@ -205,7 +186,6 @@ const SimpleHome = () => {
                     >
                       Code
                     </Link>
-                    
                   </div>
                 </div>
               </div>

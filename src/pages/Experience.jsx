@@ -4,29 +4,28 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Backend Developer',
-      company: 'ASH Tech\'s',
-      companyLink: 'https://www.linkedin.com/company/ash-tech-virtual-software-house/posts/?feedView=all',
-      duration: 'July 2025 - Present',
-      location: 'Remote (Virtual Software House)',
+      title: 'IT Support Engineer',
+      company: 'ArcanaInfo',
+      duration: 'September 2025 - Present',
+      location: 'Islamabad, Pakistan',
       description: [
-        'Currently working as a Backend Developer focusing on scalable backend services.',
-        'Utilizing NestJS, TypeScript, and PostgreSQL for building robust APIs.',
-        'Collaborating in a remote team environment for software planning and implementation.',
-        'Following software development best practices including Git version control and code reviews.',
+        'Proactively monitored and maintained IT systems to ensure high availability and SLA compliance.',
+        'Performed root cause analysis by monitoring system logs to identify, troubleshoot, and resolve incidents.',
+        'Managed client transition processes including training in staging environments and successful production migrations.',
+        'Collaborated with internal teams to ensure system stability, reliability, and smooth client onboarding.',
       ],
     },
     {
       title: 'Backend Developer Intern',
       company: 'AG Infotech',
-      duration: 'June 2024 - August 2024',
-      location: 'Islamabad, Pakistan (Remote)',
+      duration: 'April 2024 - August 2024',
+      location: 'Islamabad, Pakistan',
       description: [
-        'Contributed to the development of robust RESTful APIs using NestJS and TypeScript.',
-        'Managed and optimized database interactions with PostgreSQL and Prisma ORM.',
-        'Implemented secure JWT authentication and role-based access control.',
-        'Collaborated with senior developers on code reviews and system design.',
-        'Participated in agile development methodologies, including daily stand-ups and sprint planning.',
+        'Developed RESTful APIs using NestJS with a modular and scalable architecture.',
+        'Designed and managed databases using PostgreSQL and Prisma ORM.',
+        'Implemented secure authentication and authorization using JWT.',
+        'Worked with JavaScript and TypeScript, applying dependency injection and backend best practices.',
+        'Collaborated with senior developers on backend logic, API testing, and system improvements.',
       ],
     },
   ];
@@ -42,11 +41,11 @@ const Experience = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
               My Experience
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A detailed overview of my professional and academic journey
+              A professional overview of my industry experience and backend development journey
             </p>
           </motion.div>
         </div>
@@ -72,30 +71,25 @@ const Experience = () => {
 
                 {/* Timeline dot */}
                 <div className="flex-shrink-0 w-12 h-12 rounded-full border-4 border-border bg-primary flex items-center justify-center z-10">
-                  <FiBriefcase className="text-primary-foreground" size={24} />
+                  <FiBriefcase className="text-primary-foreground" size={22} />
                 </div>
 
                 {/* Content */}
                 <div className="ml-8 flex-1">
                   <div className="bg-card p-6 rounded-lg border border-border">
-                    <h3 className="text-2xl font-semibold text-foreground mb-2">
+                    <h3 className="text-2xl font-semibold mb-2">
                       {exp.title}
                     </h3>
-                    {exp.companyLink ? (
-                      <a
-                        href={exp.companyLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary font-medium mb-2 inline-block hover:underline"
-                      >
-                        {exp.company}
-                      </a>
-                    ) : (
-                      <p className="text-primary font-medium mb-2">{exp.company}</p>
-                    )}
-                    <div className="flex items-center text-muted-foreground text-sm mb-4">
-                      <FiCalendar className="mr-2" /> {exp.duration}
-                      <FiMapPin className="ml-4 mr-2" /> {exp.location}
+                    <p className="text-primary font-medium mb-2">
+                      {exp.company}
+                    </p>
+                    <div className="flex flex-wrap items-center text-muted-foreground text-sm mb-4">
+                      <span className="flex items-center mr-4">
+                        <FiCalendar className="mr-2" /> {exp.duration}
+                      </span>
+                      <span className="flex items-center">
+                        <FiMapPin className="mr-2" /> {exp.location}
+                      </span>
                     </div>
                     <ul className="list-disc list-inside text-muted-foreground space-y-2">
                       {exp.description.map((item, i) => (
