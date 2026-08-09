@@ -38,9 +38,9 @@ const SimpleHome = () => {
             </div>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-              Passionate about building scalable enterprise solutions and designing robust APIs.
-              Specialized in API management with WSO2, backend development with NestJS, and 
-              cloud deployment using Docker and Kubernetes.
+              Passionate about building scalable enterprise integration solutions and designing secure APIs.
+              Specialized in API development and management with WSO2, enterprise integration, middleware
+              technologies, and cloud deployments using Docker, Kubernetes, and CI/CD pipelines.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -69,7 +69,7 @@ const SimpleHome = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
             <div className="p-4">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-2">
-                3+
+                1+
               </div>
               <div className="text-sm sm:text-base text-muted-foreground">Years Experience</div>
             </div>
