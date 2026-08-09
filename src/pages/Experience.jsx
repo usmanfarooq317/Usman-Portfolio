@@ -4,28 +4,31 @@ import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
 const Experience = () => {
   const experiences = [
     {
-      title: 'IT Support Engineer',
-      company: 'ArcanaInfo',
+      title: 'Integration Engineer',
+      company: 'ARCANAINFO',
       duration: 'September 2025 - Present',
       location: 'Islamabad, Pakistan',
       description: [
-        'Proactively monitored and maintained IT systems to ensure high availability and SLA compliance.',
-        'Performed root cause analysis by monitoring system logs to identify, troubleshoot, and resolve incidents.',
-        'Managed client transition processes including training in staging environments and successful production migrations.',
-        'Collaborated with internal teams to ensure system stability, reliability, and smooth client onboarding.',
+        'Developed and managed enterprise APIs using WSO2 technologies to enable seamless system integration across production environments.',
+        'Worked on enterprise integration solutions for Telecom and FinTech domains, ensuring reliable and secure communication between business systems.',
+        'Managed APIs using WSO2 API Manager, including API publishing, endpoint configuration, security policy implementation, rate limiting (throttling), and Developer Portal management.',
+        'Worked on API request/response handling, payload transformation, and backend service integration to support business processes.',
+        'Configured and maintained integration environments, ensuring smooth deployments, stable services, and high system availability.',
+        'Supported the complete API lifecycle, including deployment, testing, troubleshooting, monitoring, and maintenance of integration services.',
+        'Collaborated with senior engineers and cross-functional teams to resolve production issues and improve integration performance.',
       ],
     },
     {
       title: 'Backend Developer Intern',
       company: 'AG Infotech',
-      duration: 'April 2024 - August 2024',
+      duration: 'June 2024 - August 2024',
       location: 'Islamabad, Pakistan',
       description: [
-        'Developed RESTful APIs using NestJS with a modular and scalable architecture.',
-        'Designed and managed databases using PostgreSQL and Prisma ORM.',
-        'Implemented secure authentication and authorization using JWT.',
-        'Worked with JavaScript and TypeScript, applying dependency injection and backend best practices.',
-        'Collaborated with senior developers on backend logic, API testing, and system improvements.',
+        'Built REST APIs using NestJS following clean architecture principles.',
+        'Designed PostgreSQL databases with Prisma ORM for efficient data management.',
+        'Implemented JWT-based authentication and authorization for secure API endpoints.',
+        'Worked with JavaScript and TypeScript in backend development.',
+        'Collaborated with senior developers on code reviews and system improvements.',
       ],
     },
   ];
@@ -45,7 +48,7 @@ const Experience = () => {
               My Experience
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A professional overview of my industry experience and backend development journey
+              A professional overview of my industry experience in API development, enterprise integration, and backend engineering
             </p>
           </motion.div>
         </div>
