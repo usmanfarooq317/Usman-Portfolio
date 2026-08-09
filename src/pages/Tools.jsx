@@ -4,12 +4,25 @@ import { FiTool, FiCode, FiDatabase, FiCloud } from 'react-icons/fi';
 const Tools = () => {
   const toolCategories = [
     {
+      name: 'Integration & Middleware',
+      icon: FiTool,
+      tools: [
+        { name: 'WSO2 API Manager', icon: '/wso2.png' },
+        { name: 'WSO2 Micro Integrator', icon: '/wso2.png' },
+        { name: 'WSO2 Enterprise Integrator', icon: '/wso2.png' },
+        { name: 'WSO2 Identity Server', icon: '/wso2.png' },
+        { name: 'Ballerina', icon: 'ballerina.svg' },
+      ],
+    },
+    {
       name: 'Programming Languages',
       icon: FiCode,
       tools: [
         { name: 'JavaScript', icon: '/javascript.png' },
         { name: 'TypeScript', icon: '/typescript.png' },
         { name: 'Python', icon: '/python.png' },
+        { name: 'XML', icon: 'xml.svg' },
+        { name: 'Bash', icon: 'bash.svg' },
       ],
     },
     {
@@ -19,38 +32,44 @@ const Tools = () => {
         { name: 'Node.js', icon: '/nodejs.png' },
         { name: 'NestJS', icon: '/nestjs.png' },
         { name: 'Express.js', icon: '/express.svg' },
-        { name: 'Flask', icon: 'flask.svg' },
-        { name: 'Django', icon: '/django.png' },
         { name: 'React', icon: '/react.png' },
         { name: 'Next.js', icon: '/nextjs.png' },
-        { name: 'Tailwind CSS', icon: 'tailwindcss.svg' },
-        { name: 'Framer Motion', icon: 'framer.svg' },
       ],
     },
     {
-      name: 'Databases & ORM',
+      name: 'Databases & Tools',
       icon: FiDatabase,
       tools: [
         { name: 'PostgreSQL', icon: '/postgresql.png' },
-        { name: 'MongoDB', icon: '/mongodb.jpg' },
-        { name: 'SQLite', icon: 'sqlite.svg' },
+        { name: 'MySQL', icon: 'mysql.svg' },
         { name: 'Prisma ORM', icon: 'prisma.svg' },
+        { name: 'Elasticsearch', icon: 'elasticsearch.svg' },
+        { name: 'Kibana', icon: 'kibana.svg' },
+        { name: 'Kafka', icon: 'kafka.svg' },
       ],
     },
     {
-      name: 'DevOps, Cloud & Tools',
+      name: 'DevOps & Cloud',
       icon: FiCloud,
       tools: [
         { name: 'Docker', icon: '/docker.svg' },
-        { name: 'Docker Hub', icon: 'dockerhub.svg' },
-        { name: 'Jenkins (CI/CD)', icon: '/jenkins.svg' },
+        { name: 'Kubernetes', icon: '/kubernetes.png' },
+        { name: 'Jenkins', icon: '/jenkins.svg' },
+        { name: 'GitHub Actions', icon: 'github-actions.svg' },
         { name: 'AWS EC2', icon: 'awsec2.svg' },
-        { name: 'IBM Cloud', icon: 'ibmcloud.svg' },
-        { name: 'Nginx', icon: 'nginx.svg' },
+        { name: 'Linux', icon: 'linux.svg' },
+        { name: 'NGINX', icon: 'nginx.svg' },
+      ],
+    },
+    {
+      name: 'APIs & Version Control',
+      icon: FiTool,
+      tools: [
+        { name: 'REST APIs', icon: 'rest.svg' },
+        { name: 'SOAP APIs', icon: 'soap.svg' },
+        { name: 'Postman', icon: 'postman.svg' },
         { name: 'Git', icon: 'git.svg' },
         { name: 'GitHub', icon: 'github.svg' },
-        { name: 'Postman', icon: 'postman.svg' },
-        { name: 'Swagger UI', icon: 'swagger.svg' },
       ],
     },
   ];
@@ -70,7 +89,7 @@ const Tools = () => {
               Tools & Technologies
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Technologies I use to build, deploy, and maintain scalable backend systems
+              Technologies and tools I use to build enterprise APIs, manage integrations, and deploy scalable systems
             </p>
           </motion.div>
         </div>
