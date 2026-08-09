@@ -4,25 +4,25 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   const skills = [
-    { name: 'JavaScript', level: 90 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'Node.js', level: 85 },
+    { name: 'WSO2 (API Manager, Micro Integrator)', level: 90 },
+    { name: 'REST APIs & SOAP APIs', level: 90 },
     { name: 'NestJS', level: 90 },
-    { name: 'PostgreSQL', level: 80 },
-    { name: 'MongoDB', level: 75 },
-    { name: 'Python', level: 78 },
-    { name: 'Django', level: 75 },
-    { name: 'Docker', level: 80 },
-    { name: 'Jenkins', level: 75 },
+    { name: 'TypeScript', level: 85 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'Docker & Containerization', level: 85 },
+    { name: 'PostgreSQL & MySQL', level: 85 },
+    { name: 'Kubernetes', level: 80 },
+    { name: 'Jenkins & CI/CD', level: 80 },
+    { name: 'Python', level: 80 },
   ];
 
   const timeline = [
     {
       year: '2025 – Present',
-      title: 'IT Support Engineer',
-      company: 'ArcanaInfo',
+      title: 'Integration Engineer',
+      company: 'ARCANAINFO',
       description:
-        'Monitoring and maintaining IT systems to ensure reliability and SLA compliance, performing root cause analysis, and managing client transitions from staging to production.',
+        'Developed and managed enterprise APIs using WSO2 technologies for Telecom and FinTech domains. Managed API lifecycle including publishing, endpoint configuration, security policies, rate limiting, and production troubleshooting.',
       type: 'work',
     },
     {
@@ -30,7 +30,7 @@ const About = () => {
       title: 'Backend Developer Intern',
       company: 'AG Infotech',
       description:
-        'Worked on backend development using NestJS, PostgreSQL, and Prisma ORM. Implemented REST APIs, JWT-based authentication, and collaborated with senior developers on production-ready systems.',
+        'Built REST APIs using NestJS with clean architecture. Designed PostgreSQL databases with Prisma ORM. Implemented JWT-based authentication and authorization for production-ready systems.',
       type: 'work',
     },
     {
@@ -56,8 +56,7 @@ const About = () => {
           >
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">About Me</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Backend-focused Computer Science graduate with hands-on experience in API development,
-              system reliability, and DevOps practices.
+              IT professional with expertise in API development, backend engineering, enterprise integration, and middleware technologies. Experienced in designing, developing, and managing RESTful APIs using WSO2, and building scalable backend systems.
             </p>
           </motion.div>
 
@@ -84,19 +83,14 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl font-bold">Backend Developer & System-Oriented Engineer</h2>
+              <h2 className="text-3xl font-bold">Software Engineer & API Integration Developer</h2>
 
               <p className="text-muted-foreground leading-relaxed">
-                I am a Computer Science graduate with a strong interest in backend development,
-                system design, and deployment automation. I enjoy solving real-world problems
-                by building reliable, scalable, and secure backend services.
+                I am an IT professional with expertise in API development, backend engineering, enterprise integration, and middleware technologies. I am experienced in designing, developing, and managing RESTful APIs using WSO2, building backend applications with NestJS, and supporting cloud deployments and CI/CD pipelines.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                During my internship at AG Infotech, I worked extensively with NestJS,
-                PostgreSQL, Prisma ORM, and JWT authentication to build RESTful APIs.
-                Currently, I am working as an IT Support Engineer at ArcanaInfo, where I focus on
-                system monitoring, troubleshooting, and ensuring operational reliability.
+                Currently working as an Integration Engineer at ARCANAINFO, where I develop and manage enterprise APIs for Telecom and FinTech domains using WSO2 technologies. I handle API management, production support, troubleshooting, and deliver scalable, secure, and high-performance integration solutions.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -129,7 +123,7 @@ const About = () => {
           >
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Technical Skills</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Technologies and tools I work with in backend development and DevOps workflows
+              Technologies and tools I work with in API development, enterprise integration, and DevOps workflows
             </p>
           </motion.div>
 
@@ -173,7 +167,7 @@ const About = () => {
           >
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">My Journey</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Education and professional experience shaping my backend engineering career
+              Education and professional experience shaping my software engineering career
             </p>
           </motion.div>
 
@@ -231,13 +225,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-background p-6 rounded-lg border border-border">
               <FiAward className="text-primary mb-3" size={28} />
-              <h3 className="font-semibold">Backend Internship Certificate</h3>
+              <h3 className="font-semibold">Backend Developer Internship</h3>
               <p className="text-muted-foreground">AG Infotech</p>
             </div>
 
             <div className="bg-background p-6 rounded-lg border border-border">
               <FiTarget className="text-accent mb-3" size={28} />
-              <h3 className="font-semibold">CTF Participation</h3>
+              <h3 className="font-semibold">CFT Participation</h3>
               <p className="text-muted-foreground">Military College of Signals</p>
             </div>
           </div>
