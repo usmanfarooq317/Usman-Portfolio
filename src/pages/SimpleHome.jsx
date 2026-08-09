@@ -8,14 +8,14 @@ const SimpleHome = () => {
   const technologies = [
     { name: "JavaScript", icon: "/javascript.png" },
     { name: "TypeScript", icon: "/typescript.png" },
-    { name: "React", icon: "/react.png" },
-    { name: "Next.js", icon: "/nextjs.png" },
+    { name: "Python", icon: "/python.png" },
     { name: "Node.js", icon: "/nodejs.png" },
     { name: "NestJS", icon: "/nestjs.png" },
     { name: "PostgreSQL", icon: "/postgresql.png" },
-    { name: "MongoDB", icon: "/mongodb.jpg" },
-    { name: "Python", icon: "/python.png" },
-    { name: "Django", icon: "/django.png" },
+    { name: "Docker", icon: "/docker.svg" },
+    { name: "Kubernetes", icon: "/kubernetes.png" },
+    { name: "WSO2", icon: "/wso2.png" },
+    { name: "Jenkins", icon: "/jenkins.svg" },
   ];
 
   return (
@@ -32,16 +32,15 @@ const SimpleHome = () => {
               <div className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground">
                 <span>I'm a </span>
                 <span className="text-primary font-semibold">
-                  Backend Developer
+                  Software Engineer & API Developer
                 </span>
               </div>
             </div>
 
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-              Passionate about creating innovative web solutions and solving
-              complex problems through modern technologies. Specialized in
-              NestJS, PostgreSQL, and backend development with some experience in
-              frontend technologies like Next.js.
+              Passionate about building scalable enterprise solutions and designing robust APIs.
+              Specialized in API management with WSO2, backend development with NestJS, and 
+              cloud deployment using Docker and Kubernetes.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -55,7 +54,7 @@ const SimpleHome = () => {
                 to="/Usman-Farooq-Resume.pdf"
                 target="_blank"
                 download
-                className="inline-flex items-center justify-center px-6 py-3 border border-border bg-background text-foreground rounded-md font-medium hover:bg-accent transition-colors min-h-[44px] text-center"
+                className="inline-flex items-center justify-center px-6 py-3 border border-border bg-background text-foreground rounded-md font-medium hover:bg-accent transition-colors min-h-[44px]"
               >
                 Download Resume
               </Link>
@@ -70,9 +69,9 @@ const SimpleHome = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
             <div className="p-4">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-2">
-                2+
+                3+
               </div>
-              <div className="text-sm sm:text-base text-muted-foreground">Years Learning</div>
+              <div className="text-sm sm:text-base text-muted-foreground">Years Experience</div>
             </div>
             <div className="p-4">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-2">
@@ -82,15 +81,15 @@ const SimpleHome = () => {
             </div>
             <div className="p-4">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-2">
-                10+
+                20+
               </div>
               <div className="text-sm sm:text-base text-muted-foreground">Technologies</div>
             </div>
             <div className="p-4">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-2">
-                1
+                2
               </div>
-              <div className="text-sm sm:text-base text-muted-foreground">Internship</div>
+              <div className="text-sm sm:text-base text-muted-foreground">Professional Roles</div>
             </div>
           </div>
         </div>
@@ -104,8 +103,7 @@ const SimpleHome = () => {
               Technologies I Work With
             </h2>
             <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
-              I'm proficient in a wide range of modern technologies and
-              frameworks
+              I'm proficient in a wide range of modern technologies, frameworks, and enterprise integration platforms
             </p>
           </div>
 
